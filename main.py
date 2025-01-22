@@ -76,13 +76,7 @@ def go(config: DictConfig):
                 },
    
            
-                 ) )
-
-
-        if "data_check" in active_steps:
-            ##################
-            # Implement here #
-            ##################
+        ######
             pass
 
         if "data_split" in active_steps:
