@@ -49,12 +49,26 @@ def go(config: DictConfig):
                     "artifact_description": "Raw file as downloaded"
                 },
             )
+    
+         if "basic_cleaning" in active_steps:
+              _ =mflow.run(
+                  os.path.join(config["main"]["components_repository"], "basic_cleaning"),
+                  "main",
+                  version="main",
+                  env_manager="conda",
+                  parameters={
+                      "input_artifact": "sample.csv:latest",
+                      "output_artifact": "clean_sample.csv",
+                      "output_type": "cleaned_data",
+                      "output_description": "Cleaned dataset with filtered prices",
+                      "min_price": config["basic_cleaning"]["min_price"],
+                      "max_price": config["basic_cleaning"]["max_price"],
+                  },
+              )
+          "],
+        },
+    )
 
-        if "basic_cleaning" in active_steps:
-            ##################
-            # Implement here #
-            ##################
-            pass
 
         if "data_check" in active_steps:
             ##################
