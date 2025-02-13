@@ -179,3 +179,9 @@ Please, make sure all steps are using **the same** python version and that you h
 ## License
 
 [License](LICENSE.txt)
+
+## Project Links
+
+- 📌 **W&B Project:** [nyc_airbnb on W&B](<https://wandb.ai/pepunam4-western-governors-university/nyc_airbnb?nw=nwuserpepunam4>)
+- 📌 **GitHub Repository:** [Project Repository](<https://github.com/pepunam/Project-Build-an-ML-Pipeline-Starter>)
+
